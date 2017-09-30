@@ -14,15 +14,14 @@ body, html {
   background-size: cover;
 }
 
-.bgimg-1 {
+.bgimg {
   background-image: url("/img/bgimg-1.png");
-  min-height: 100%;
 }
 
-.bgimg-2 {
-  background-image: url("/img/bgimg-1.png");
-  min-height: 300px;
-}
+#bg1 { min-height: 100%;
+ }
+#bg2 { min-height: 300px;
+ }
 
 .bgimg-3 {
   background-color: DimGrey;
