@@ -5,28 +5,21 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bgimg {
   background-image: url("/img/bgimg-1.png");
 }
+
 
 #bg1 { min-height: 100%;
  }
 #bg2 { min-height: 300px;
  }
-
-.bgimg-3 {
-  background-color: DimGrey;
-  min-height: 400px;
-}
 
 .bar {
   color:black;
