@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>SnesBot &hearts; A Dscord Bot</title>
+<title>SnesBot &hearts; A Discord Bot</title>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -30,43 +30,215 @@
 	<div style="position:relative;">
 		<div class="bar">
       <p>
-        <table>
+        <center>
+          <table>
   <tr>
+    <th>Category</th>
     <th>Command</th>
+    <th>Description</th>
     <th>Example</th>
-
+  </tr>
+    <!-- Admin commands -->
+  <tr>
+    <th rowspan="3">Admin:</th>
+    <td>adminset</td>
+    <td>Adds a specified role to a user.</td>
+    <td>s!adminset selfroles [rolename]</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-
+    <td>say</td>
+    <td>Bot repeats what you tell it to.</td>
+    <td>s!say repeat this sentence.</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-
+    <td>selfrole</td>
+    <td>Allows users to set their own role (configure with adminset)</td>
+    <td>s!selfrole <i>rolename</i>.</td>
+  </tr>
+  <!--Alias command-->
+  <tr>
+    <th rowspawn="1">Alias</th>
+    <td>alias</td>
+    <td>Manage per-server aliases for commands.</td>
+    <td>s!alias <i>new-prefix</i>.</td>
+  </tr>
+  <!--Ascii command -->
+  <tr>
+    <th rowspan="1">Ascii</th>
+    <td>ascii</td>
+    <td>Converts a given string of text into ascii art</td>
+    <td>s!ascii ascii art pls thx.</td>
+  </tr>
+  <!-- Audio Commands -->
+  <tr>
+    <th rowspan="14">Audio</th>
+    <td>audioset</td>
+    <td>Audio settings</td>
+    <td>s!audioset</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-
+    <td>audiostat</td>
+    <td>General stats on audio stuff.</td>
+    <td>s!audiostat</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-
+    <td>cache</td>
+    <td>Cache management tools.</td>
+    <td>s!cache</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-
+    <td>local</td>
+    <td>Local playlists commands.</td>
+    <td>s!local</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-
+    <td>pause</td>
+    <td>Pauses the current song, 'resume` to continue.</td>
+    <td>s!pause s!resume</td>
   </tr>
-</table>
+  <tr>
+    <td>prev</td>
+    <td>Goes back to the previous song.</td>
+    <td>s!prev</td>
+  </tr>
+  <tr>
+    <td>queue</td>
+    <td>Queues a song to play next.</td>
+    <td>s!queue <i>songname</i></td>
+  </tr>
+  <tr>
+    <td>repeat</td>
+    <td>Puts the current song on repeat.</td>
+    <td>s!repeat</td>
+  </tr>
+  <tr>
+    <td>shuffle</td>
+    <td>Shuffles the current song queue</td>
+    <td>s!shuffle</td>
+  </tr>
+  <tr>
+    <td>sing</td>
+    <td>Make the bot sing a song</td>
+    <td>s!sing</td>
+  </tr>
+  <tr>
+    <td>skip</td>
+    <td>Skips the currently playing song.</td>
+    <td>s!skip</td>
+  </tr>
+  <tr>
+    <td>song</td>
+    <td>Info about the current playing song</td>
+    <td>s!song</td>
+  </tr>
+  <tr>
+    <td>stop</td>
+    <td>Stops a currently playing song or playlist (clears the queue)</td>
+    <td>s!stop</td>
+  </tr>
+  <tr>
+    <td>yt</td>
+    <td>Searches and plays a song from youtube.</td>
+    <td>s!yt <i>songname</i></td>
+  </tr>
+  <!--buyrole commands -->
+<tr>
+  <th rowspan="2">Buyrole</th>
+  <td>buyrole</td>
+  <td>Buy roles with credits</td>
+  <td>s!buyrole</td>
+</tr>
+  <tr>
+    <td>buyroleset</td>
+    <td>manage the buyrole settings</td>
+    <td>s!buyroleset</td>
+  </tr>
+  <!-- Cookie commands -->
+<tr>
+  <th rowspan="5">Cookie</th>
+  <td>cookie</td>
+  <td>Obtain a randum number of cookies</td>
+  <td>s!cookie</td>
+</tr>
+  <tr>
+    <td>give</td>
+    <td>gives another user a cooke from your jar.</td>
+    <td>s!give <i>user</i> cookies</td>
+  </tr>
+  <tr>
+    <td>jar</td>
+    <td>See how many cookies are in your jar.</td>
+    <td>s!jar</td>
+  </tr>
+  <tr>
+    <td>setcookie</td>
+    <td>Cookie settings.</td>
+    <td>s!setcookie</td>
+  </tr>
+  <tr>
+    <td>steal</td>
+    <td>Steal cokies from another user.</td>
+    <td>s!steal <i>user</i></td>
+  </tr>
+  <!-- Custom commands -->
+  <tr>
+    <th rowspan="5">Custom Commands</th>
+    <td>addcom</td>
+    <td>Adds a custom command.</td>
+    <td>s!addcom yourcommand Text you want</td>
+  </tr>
+  <tr>
+    <td>customcommands</td>
+    <td>Shows custom commands list</td>
+    <td>s!customcommands</td>
+  </tr>
+  <tr>
+    <td>delcom</td>
+    <td>Deletes a custom command.</td>
+    <td>s!delcom <i>command</i></td>
+  </tr>
+  <tr>
+    <td>editcom</td>
+    <td>Edits a custom command</td>
+    <td>s!editcom yourcommand Text you want</td>
+  </tr>
+  <tr>
+    <td>lsgcom</td>
+    <td>Shows global custom commands</td>
+    <td>s!lsgcom</td>
+  </tr>
+  <!-- Defcon commands -->
+  <tr>
+    <th rowspan="4">Defcon Commands (purely entertainment)</th>
+    <td>defcon</td>
+    <td>Reports the defcon level</td>
+    <td>s!defcon</td>
+  </tr>
+  <tr>
+    <td>defcon+</td>
+    <td>Elevates the defcon level</td>
+    <td>s!defcon+</td>
+  </tr>
+  <tr>
+    <td>defcon-</td>
+    <td>Lowers the defcon level</td>
+    <td>s!defcon-</td>
+  </tr>
+  <tr>
+    <td>setdefcon</td>
+    <td>Sets the defcon level</td>
+    <td>s!setdefcon</td>
+  </tr>
+  <!-- DiceTable commands -->
+  <tr>
+    <th rowspan="1">DiceTable</th>
+    <td>dicetable</td>
+    <td>Shows a list under this group command</td>
+    <td>s!dtable</td>
+  </tr>
+
+          </table>
+        </center>
       </p>
 		</div>
 	</div>
